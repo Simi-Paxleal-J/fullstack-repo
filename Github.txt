@@ -203,4 +203,201 @@ To https://github.com/Simi-Paxleal-J/fullstack-repo.git
    feb6a0d..361c15d  main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Day11_index.html
+        modified:   Day11_style.css
+        modified:   Github.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\lecture_practice>git add Day11_index.html
+
+E:\lecture_practice>git add Day11_style.css
+
+E:\lecture_practice>git add Github.txt
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Day11_index.html
+        modified:   Day11_style.css
+        modified:   Github.txt
+
+
+E:\lecture_practice>git commit -m "Lecture on Fswd Day11 ~ Third commit"
+[main 7767a3f] Lecture on Fswd Day11 ~ Third commit
+ 3 files changed, 45 insertions(+), 1 deletion(-)
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin main
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin main
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git push - u origin main
+error: src refspec u does not match any
+error: src refspec origin does not match any
+error: failed to push some refs to '-'
+
+E:\lecture_practice>git push -u origin main
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\lecture_practice>git pull origin master
+fatal: couldn't find remote ref master
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git push -u origin Simi-Paxleal-J-patch-1
+error: src refspec Simi-Paxleal-J-patch-1 does not match any
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo/tree/Simi-Paxleal-J-patch-1
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin Simi-Paxleal-J-patch-1
+error: src refspec Simi-Paxleal-J-patch-1 does not match any
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo/tree/Simi-Paxleal-J-patch-1.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u Simi-Paxleal-J-patch-1
+fatal: 'Simi-Paxleal-J-patch-1' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git init
+Reinitialized existing Git repository in E:/lecture_practice/.git/
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git add .
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git commit -m "Github commit instructions"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin main
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\lecture_practice>git pull gh repo clone Simi-Paxleal-J/fullstack-repo
+fatal: 'gh' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\lecture_practice>git pull git@github.com:Simi-Paxleal-J/fullstack-repo.git
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\lecture_practice>git pull https://github.com/Simi-Paxleal-J/fullstack-repo.git
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 9 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), 2.41 KiB | 4.00 KiB/s, done.
+From https://github.com/Simi-Paxleal-J/fullstack-repo
+ * branch            HEAD       -> FETCH_HEAD
+CONFLICT (modify/delete): Github.txt deleted in 6437fbcce124a34d8a860c987eb2b95d33f2176a and modified in HEAD. Version HEAD of Github.txt left in tree.
+CONFLICT (modify/delete): Day11_style.css deleted in 6437fbcce124a34d8a860c987eb2b95d33f2176a and modified in HEAD. Version HEAD of Day11_style.css left in tree.
+CONFLICT (modify/delete): Day11_index.html deleted in 6437fbcce124a34d8a860c987eb2b95d33f2176a and modified in HEAD. Version HEAD of Day11_index.html left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
 E:\lecture_practice>
