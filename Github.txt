@@ -160,4 +160,47 @@ To https://github.com/Simi-Paxleal-J/fullstack-repo.git
  * [new branch]      main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Github.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\lecture_practice>git add Github.txt
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Github.txt
+
+
+E:\lecture_practice>git commit -m "Github commit instructions"
+[main 361c15d] Github commit instructions
+ 1 file changed, 163 insertions(+)
+ create mode 100644 Github.txt
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.29 KiB | 782.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+   feb6a0d..361c15d  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
 E:\lecture_practice>
