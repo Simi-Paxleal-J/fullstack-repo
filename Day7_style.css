@@ -1,0 +1,58 @@
+/*browser styling*/
+*{
+  margin: 0;
+  padding: 0;
+  }
+/*parent styling*/
+  .parent
+  {
+    background-color: #483434;
+    width: 300px;
+    height: 300px;
+  }
+/*child styling*/
+.child
+{
+  display: inline-block;
+  background-color: #DDBEBE;
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+}
+.parent1
+{
+  position: relative;
+  background-color: #009DAE;
+  width: 300px;
+  height: 300px;
+  top: 55%;/*setting the postion of parent1*/
+  left: 30%;
+}
+.child1{
+  position: absolute;
+  background-color: #ccc;
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  /*top: 0; --->sets to top right with top, right =0;
+  right: 0;/*child is @right respect to parent
+  bottom:0;
+  right: 0;/*with bottom and right as zero to bottom to right*/
+  /*center*/
+  top: 33%;
+  left: 30%;
+
+}
+body{
+  background-color: #9D84B7;
+}
+@media(min-width: 768px) {
+  body{
+  background-color: #4E9F3D;
+}
+}
+@media(min-width: 1024px) {
+  body{
+  background-color: #3D0000;
+}
+}

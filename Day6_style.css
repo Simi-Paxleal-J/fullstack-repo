@@ -1,0 +1,34 @@
+
+
+
+/*Image style properties*/
+.img1 {
+  margin-right: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.img2 {
+  /*margin-left: 20%; relative percent size of the image margin to the left*/
+
+  width: 100px;;
+  height: 100px;
+}
+
+.div1{
+  border: 3px solid #cccccc;
+
+
+
+}
+.div2{
+    border: 3px solid #cccccc;
+}
+.div3{
+  border: 3px solid #cccccc;
+  /*padding-right: 200px;*/
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 500px;
+
+}

@@ -1,0 +1,50 @@
+
+
+/*Day 6 stylesheet*/
+
+.name_tag{
+  border: 3px solid #F6EABE;
+  width: 20%;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  text-align: center;
+  color: #A2D2FF;
+  font-style: italic;
+}
+.hrstyle{
+  border: 4px solid #F6EABE;
+  border-radius: 4px;
+}
+
+.div1 {
+  border: 3px solid #FEF5ED;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding-left: 20px;
+  color: #FEF5ED;
+  font-style: italic;
+}
+
+.div2 {
+  border: 3px solid #FEF5ED;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #FEF5ED
+}
+.div3 {
+  border: 3px solid #FEF5ED;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #FEF5ED
+}
+
+.oval {
+  height: 200px;
+  width: 150px;
+  background-color: #700B97;
+  border-radius: 50%;
+}
+.body_color
+{
+  background-color: #700B97;
+}
