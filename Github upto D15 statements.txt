@@ -1,0 +1,694 @@
+Microsoft Windows [Version 10.0.19042.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\lecture_practice>cd .
+
+E:\lecture_practice>git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+E:\lecture_practice>git config --global user.name "Simi-Paxleal-J"
+
+E:\lecture_practice>git config --global user.email "paxsimileal@gmail.com"
+
+E:\lecture_practice>git init
+Initialized empty Git repository in E:/lecture_practice/.git/
+
+E:\lecture_practice>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Day11_index.html
+        Day11_style.css
+        Day2_index.html
+        Day3_index.html
+        Day4_index.html
+        Day5_index.html
+        Day5_style.css
+        Day6_index.html
+        Day6_style.css
+        Day7_index.html
+        Day7_style.css
+        Day9_index.html
+        Day9_style.css
+        MiniProjectDay6_index.html
+        MiniProjectDay6_style.css
+        media/
+        output/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\lecture_practice>git add .
+
+E:\lecture_practice>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Day11_index.html
+        new file:   Day11_style.css
+        new file:   Day2_index.html
+        new file:   Day3_index.html
+        new file:   Day4_index.html
+        new file:   Day5_index.html
+        new file:   Day5_style.css
+        new file:   Day6_index.html
+        new file:   Day6_style.css
+        new file:   Day7_index.html
+        new file:   Day7_style.css
+        new file:   Day9_index.html
+        new file:   Day9_style.css
+        new file:   MiniProjectDay6_index.html
+        new file:   MiniProjectDay6_style.css
+        new file:   media/Cute-bee-cartoon-vector-illustration-10.jpg
+        new file:   media/The Book Was Better_.mp4
+        new file:   media/assignment3image.jpg
+        new file:   media/benefits-of-digital-hr.jpg
+        new file:   media/images.png
+        new file:   media/mickey_6821882.jpg
+        new file:   output/Assignment 3 DAY 6 (October, 26 2021).png
+
+
+E:\lecture_practice>git commit -m "Lecture on Full stack Day1-11 ~ First commit"
+[master (root-commit) feb6a0d] Lecture on Full stack Day1-11 ~ First commit
+ 22 files changed, 478 insertions(+)
+ create mode 100644 Day11_index.html
+ create mode 100644 Day11_style.css
+ create mode 100644 Day2_index.html
+ create mode 100644 Day3_index.html
+ create mode 100644 Day4_index.html
+ create mode 100644 Day5_index.html
+ create mode 100644 Day5_style.css
+ create mode 100644 Day6_index.html
+ create mode 100644 Day6_style.css
+ create mode 100644 Day7_index.html
+ create mode 100644 Day7_style.css
+ create mode 100644 Day9_index.html
+ create mode 100644 Day9_style.css
+ create mode 100644 MiniProjectDay6_index.html
+ create mode 100644 MiniProjectDay6_style.css
+ create mode 100644 media/Cute-bee-cartoon-vector-illustration-10.jpg
+ create mode 100644 media/The Book Was Better_.mp4
+ create mode 100644 media/assignment3image.jpg
+ create mode 100644 media/benefits-of-digital-hr.jpg
+ create mode 100644 media/images.png
+ create mode 100644 media/mickey_6821882.jpg
+ create mode 100644 output/Assignment 3 DAY 6 (October, 26 2021).png
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+
+E:\lecture_practice>git push -u origin main
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (26/26), 5.28 MiB | 600.00 KiB/s, done.
+Total 26 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Github.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\lecture_practice>git add Github.txt
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Github.txt
+
+
+E:\lecture_practice>git commit -m "Github commit instructions"
+[main 361c15d] Github commit instructions
+ 1 file changed, 163 insertions(+)
+ create mode 100644 Github.txt
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.29 KiB | 782.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+   feb6a0d..361c15d  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Day11_index.html
+        modified:   Day11_style.css
+        modified:   Github.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\lecture_practice>git add Day11_index.html
+
+E:\lecture_practice>git add Day11_style.css
+
+E:\lecture_practice>git add Github.txt
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Day11_index.html
+        modified:   Day11_style.css
+        modified:   Github.txt
+
+
+E:\lecture_practice>git commit -m "Lecture on Fswd Day11 ~ Third commit"
+[main 7767a3f] Lecture on Fswd Day11 ~ Third commit
+ 3 files changed, 45 insertions(+), 1 deletion(-)
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin main
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin main
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git push - u origin main
+error: src refspec u does not match any
+error: src refspec origin does not match any
+error: failed to push some refs to '-'
+
+E:\lecture_practice>git push -u origin main
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\lecture_practice>git pull origin master
+fatal: couldn't find remote ref master
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git push -u origin Simi-Paxleal-J-patch-1
+error: src refspec Simi-Paxleal-J-patch-1 does not match any
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo/tree/Simi-Paxleal-J-patch-1
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin Simi-Paxleal-J-patch-1
+error: src refspec Simi-Paxleal-J-patch-1 does not match any
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo/tree/Simi-Paxleal-J-patch-1.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u Simi-Paxleal-J-patch-1
+fatal: 'Simi-Paxleal-J-patch-1' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git init
+Reinitialized existing Git repository in E:/lecture_practice/.git/
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git add .
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git commit -m "Github commit instructions"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin main
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Simi-Paxleal-J/fullstack-repo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\lecture_practice>git pull gh repo clone Simi-Paxleal-J/fullstack-repo
+fatal: 'gh' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\lecture_practice>git pull git@github.com:Simi-Paxleal-J/fullstack-repo.git
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\lecture_practice>git pull https://github.com/Simi-Paxleal-J/fullstack-repo.git
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 9 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), 2.41 KiB | 4.00 KiB/s, done.
+From https://github.com/Simi-Paxleal-J/fullstack-repo
+ * branch            HEAD       -> FETCH_HEAD
+CONFLICT (modify/delete): Github.txt deleted in 6437fbcce124a34d8a860c987eb2b95d33f2176a and modified in HEAD. Version HEAD of Github.txt left in tree.
+CONFLICT (modify/delete): Day11_style.css deleted in 6437fbcce124a34d8a860c987eb2b95d33f2176a and modified in HEAD. Version HEAD of Day11_style.css left in tree.
+CONFLICT (modify/delete): Day11_index.html deleted in 6437fbcce124a34d8a860c987eb2b95d33f2176a and modified in HEAD. Version HEAD of Day11_index.html left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   README.md
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+        deleted by them: Day11_index.html
+        deleted by them: Day11_style.css
+        deleted by them: Github.txt
+
+
+E:\lecture_practice>git add Day11_index.html
+
+E:\lecture_practice>git add Github.txt
+
+E:\lecture_practice>git add Day11_style.css
+
+E:\lecture_practice>git commit -m "Day 11 and Github ~changes made"
+[main f686a19] Day 11 and Github ~changes made
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git remote -v
+origin  https://github.com/Simi-Paxleal-J/fullstack-repo.git (fetch)
+origin  https://github.com/Simi-Paxleal-J/fullstack-repo.git (push)
+
+E:\lecture_practice>git push -orgin master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\lecture_practice>git push -origin main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\lecture_practice>git push -u origin main
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 4.11 KiB | 1.37 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+   6437fbc..f686a19  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Github_merger.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\lecture_practice>git add Github_merger.txt
+
+E:\lecture_practice>git commit -m "after pull and push to repo"
+[main ae0bc67] after pull and push to repo
+ 1 file changed, 471 insertions(+)
+ create mode 100644 Github_merger.txt
+
+E:\lecture_practice>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\lecture_practice>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 3.90 KiB | 1.30 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+   f686a19..ae0bc67  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Day12_index.html
+        Day12_script.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\lecture_practice>git add Day12_index.html
+
+E:\lecture_practice>git add Day12_script.js
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Day12_index.html
+        new file:   Day12_script.js
+
+
+E:\lecture_practice>git commit -m "Day 12-Basics of Javascript"
+[main 9e09b83] Day 12-Basics of Javascript
+ 2 files changed, 65 insertions(+)
+ create mode 100644 Day12_index.html
+ create mode 100644 Day12_script.js
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 885 bytes | 295.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+   ae0bc67..9e09b83  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Day13_index.html
+        Day13_script.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\lecture_practice>git add Day13_script.js
+
+E:\lecture_practice>git add Day13_index.html
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Day13_index.html
+        new file:   Day13_script.js
+
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git commit -m "Day13-Loops-&-Functions-Javascript"
+[main ee0f154] Day13-Loops-&-Functions-Javascript
+ 2 files changed, 110 insertions(+)
+ create mode 100644 Day13_index.html
+ create mode 100644 Day13_script.js
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1018 bytes | 339.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+   9e09b83..ee0f154  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Day14_index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\lecture_practice>git add Day14_index.html
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Day14_index.html
+
+
+E:\lecture_practice>git commit -m "Day14-Bootstrap intro"
+[main 2be7891] Day14-Bootstrap intro
+ 1 file changed, 59 insertions(+)
+ create mode 100644 Day14_index.html
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.21 KiB | 412.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+   ee0f154..2be7891  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Day15_index.html
+        Day15_script.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\lecture_practice>git add Day15_script.js
+
+E:\lecture_practice>git add Day15_index.html
+
+E:\lecture_practice>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Day15_index.html
+        new file:   Day15_script.js
+
+
+E:\lecture_practice>git commit -m "Day15- Array, Function & Objects"
+[main 132ebeb] Day15- Array, Function & Objects
+ 2 files changed, 79 insertions(+)
+ create mode 100644 Day15_index.html
+ create mode 100644 Day15_script.js
+
+E:\lecture_practice>git remote add origin https://github.com/Simi-Paxleal-J/fullstack-repo.git
+error: remote origin already exists.
+
+E:\lecture_practice>git branch -M main
+
+E:\lecture_practice>git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1007 bytes | 335.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Simi-Paxleal-J/fullstack-repo.git
+   2be7891..132ebeb  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+E:\lecture_practice>
